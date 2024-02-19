@@ -8,18 +8,9 @@ import androidx.room.PrimaryKey
 data class Wish(
       @PrimaryKey(autoGenerate = true)
       val id: Long =0L,
-      @ColumnInfo(name = "wish-table")
+      @ColumnInfo(name = "wish-title")
       val title: String="",
-      @ColumnInfo(name = "wish-table")
+      @ColumnInfo(name = "wish-description")
       val description:String=""
 )
-object DummyWish{
-      val wishlist= listOf(
-            Wish(title = "Mobile", description = "Android Smartphone"),
-            Wish(title = "Mobile", description = "Android Smartphone"),
-            Wish(title = "Mobile", description = "Android Smartphone"),
-            Wish(title = "Mobile", description = "Android Smartphone"),
-            Wish(title = "Mobile", description = "Android Smartphone"),
 
-            )
-}
